@@ -1,30 +1,31 @@
-// const React = require("react");
-// const ReactDOM = require("react-dom");
-// const { BrowserRouter } = require("react-router-dom");
-
-// require("./index.css");
-// const App = require("./App").default;
-
-// ReactDOM.createRoot(document.getElementById("root")).render(
-//   React.createElement(React.StrictMode, null,
-//     React.createElement(BrowserRouter, null,
-//       React.createElement(App, null)
-//     )
-//   )
-// );
-
 import * as React from "react";
+
 import * as ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-
-import "./index.css";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 import App from "./App";
+import "./index.css";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#1976d2',
+    },
+    secondary: {
+      main: '#dc004e',
+    },
+  },
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
