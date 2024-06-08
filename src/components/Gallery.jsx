@@ -36,7 +36,7 @@ export default function Gallery() {
             <Card>
               <CardMedia
                 component="img"
-                height="140"
+                height="180"
                 image={pet.photo}
                 alt={pet.name}
               />

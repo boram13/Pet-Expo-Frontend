@@ -1,21 +1,21 @@
 
 
 const birds = [
-    { _id: 'b1', name: 'Parrot', photo: 'https://example.com/parrot.jpg', origin: 'Australia' },
-    { _id: 'b2', name: 'Sparrow', photo: 'https://example.com/sparrow.jpg', origin: 'Worldwide' },
-    { _id: 'b3', name: 'Eagle', photo: 'https://example.com/eagle.jpg', origin: 'North America' },
-    { _id: 'b4', name: 'Owl', photo: 'https://example.com/owl.jpg', origin: 'Worldwide' },
-    { _id: 'b5', name: 'Penguin', photo: 'https://example.com/penguin.jpg', origin: 'Antarctica' },
-    { _id: 'b6', name: 'Flamingo', photo: 'https://example.com/flamingo.jpg', origin: 'Africa' },
-    { _id: 'b7', name: 'Seagull', photo: 'https://example.com/seagull.jpg', origin: 'Worldwide' },
-    { _id: 'b8', name: 'Hummingbird', photo: 'https://example.com/hummingbird.jpg', origin: 'Americas' },
-    { _id: 'b9', name: 'Peacock', photo: 'https://example.com/peacock.jpg', origin: 'India' },
-    { _id: 'b10', name: 'Pigeon', photo: 'https://example.com/pigeon.jpg', origin: 'Worldwide' }
+    { _id: 'b1', name: 'Parrot', photo: 'https://rb.gy/o40ew3', origin: 'Australia' },
+    { _id: 'b2', name: 'Sparrow', photo: 'https://rb.gy/sw5vqs', origin: 'Worldwide' },
+    { _id: 'b3', name: 'Eagle', photo: 'https://rb.gy/n64vom', origin: 'North America' },
+    { _id: 'b4', name: 'Owl', photo: 'https://shorturl.at/aPvJ7', origin: 'Worldwide' },
+    { _id: 'b5', name: 'Penguin', photo: 'https://shorturl.at/TBYvO', origin: 'Antarctica' },
+    { _id: 'b6', name: 'Flamingo', photo: 'https://shorturl.at/YH5if', origin: 'Africa' },
+    { _id: 'b7', name: 'Seagull', photo: 'https://shorturl.at/VGS54', origin: 'Worldwide' },
+    { _id: 'b8', name: 'Hummingbird', photo: 'https://www.birdlife.org/wp-content/uploads/2021/06/Hummingbird-Norbert-Hentges-Unsplash-edited-scaled.jpg', origin: 'Americas' },
+    { _id: 'b9', name: 'Peacock', photo: 'https://t.ly/01rTQ', origin: 'India' },
+    { _id: 'b10', name: 'Pigeon', photo: 'https://t.ly/xA_JV', origin: 'Worldwide' }
   ];
   
   const cats = [
-    { _id: 'c1', name: 'Persian', photo: 'https://example.com/persian.jpg', origin: 'Iran' },
-    { _id: 'c2', name: 'Siamese', photo: 'https://example.com/siamese.jpg', origin: 'Thailand' },
+    { _id: 'c1', name: 'Persian', photo: 'https://www.vetstreet.com/cats/persian', origin: 'Iran' },
+    { _id: 'c2', name: 'Siamese', photo: 'https://t.ly/LeNT3', origin: 'Thailand' },
     { _id: 'c3', name: 'Maine Coon', photo: 'https://example.com/mainecoon.jpg', origin: 'USA' },
     { _id: 'c4', name: 'Sphynx', photo: 'https://example.com/sphynx.jpg', origin: 'Canada' },
     { _id: 'c5', name: 'Ragdoll', photo: 'https://example.com/ragdoll.jpg', origin: 'USA' },
