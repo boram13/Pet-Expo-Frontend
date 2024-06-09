@@ -18,25 +18,17 @@ const birds = [
     { _id: 'c2', name: 'Siamese', photo: 'https://t.ly/dZD98', origin: 'Thailand' },
     { _id: 'c3', name: 'Maine Coon', photo: 'https://t.ly/1LqMc', origin: 'USA' },
     { _id: 'c4', name: 'Sphynx', photo: 'https://t.ly/cvIOC', origin: 'Canada' },
-    { _id: 'c5', name: 'Ragdoll', photo: 'https://example.com/ragdoll.jpg', origin: 'USA' },
-    { _id: 'c6', name: 'British Shorthair', photo: 'https://example.com/britishshorthair.jpg', origin: 'UK' },
-    { _id: 'c7', name: 'Abyssinian', photo: 'https://example.com/abyssinian.jpg', origin: 'Ethiopia' },
-    { _id: 'c8', name: 'Bengal', photo: 'https://example.com/bengal.jpg', origin: 'USA' },
-    { _id: 'c9', name: 'Birman', photo: 'https://example.com/birman.jpg', origin: 'France' },
-    { _id: 'c10', name: 'Scottish Fold', photo: 'https://example.com/scottishfold.jpg', origin: 'Scotland' }
+    { _id: 'c5', name: 'Ragdoll', photo: 'https://rb.gy/fb4kbx', origin: 'USA' },
+    { _id: 'c6', name: 'British Shorthair', photo: 'https://rb.gy/mikqek', origin: 'UK' },
   ];
   
   const dogs = [
-    { _id: 'd1', name: 'Labrador Retriever', photo: 'https://t.ly/SD8xi', origin: 'Canada' },
-    { _id: 'd2', name: 'German Shepherd', photo: 'https://t.ly/NcwkA', origin: 'Germany' },
-    { _id: 'd3', name: 'Golden Retriever', photo: 'https://urlis.net/0asih5f5', origin: 'Scotland' },
+    { _id: 'd1', name: 'Labrador Retriever', photo: 'https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg', origin: 'Canada' },
+    { _id: 'd2', name: 'German Shepherd', photo: 'https://cdn.pixabay.com/photo/2016/02/22/17/49/dog-1210559_960_720.jpg', origin: 'Germany' },
+    { _id: 'd3', name: 'Golden Retriever', photo: 'https://cdn.pixabay.com/photo/2016/10/21/17/46/dog-1758178_960_720.jpg', origin: 'Scotland' },
     { _id: 'd4', name: 'Bulldog', photo: 'https://example.com/bulldog.jpg', origin: 'UK' },
     { _id: 'd5', name: 'Poodle', photo: 'https://example.com/poodle.jpg', origin: 'France' },
-    { _id: 'd6', name: 'Beagle', photo: 'https://example.com/beagle.jpg', origin: 'UK' },
-    { _id: 'd7', name: 'Rottweiler', photo: 'https://example.com/rottweiler.jpg', origin: 'Germany' },
-    { _id: 'd8', name: 'Yorkshire Terrier', photo: 'https://example.com/yorkshireterrier.jpg', origin: 'UK' },
-    { _id: 'd9', name: 'Boxer', photo: 'https://example.com/boxer.jpg', origin: 'Germany' },
-    { _id: 'd10', name: 'Dachshund', photo: 'https://example.com/dachshund.jpg', origin: 'Germany' }
+    { _id: 'd6', name: 'Beagle', photo: 'https://example.com/beagle.jpg', origin: 'UK' }
   ];
   
   const animals = { birds, cats, dogs };
