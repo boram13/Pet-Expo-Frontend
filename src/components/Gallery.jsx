@@ -6,11 +6,13 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
+import TextField from "@mui/material/TextField";
 import { getAll } from "../service/pet";
 
 export default function Gallery() {
   const { type } = useParams();
   const [pets, setPets] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const fetchPets = async () => {
@@ -25,13 +27,29 @@ export default function Gallery() {
     fetchPets();
   }, [type]);
 
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value.toLowerCase());
+  };
+
+  const filteredPets = pets.filter(pet => 
+    pet.name.toLowerCase().includes(searchQuery) ||
+    pet.origin.toLowerCase().includes(searchQuery)
+  );
+
   return (
     <Box>
       <Typography variant="h2" gutterBottom>
         {type.charAt(0).toUpperCase() + type.slice(1)}
       </Typography>
+      <TextField 
+        label="Search" 
+        variant="outlined" 
+        fullWidth 
+        margin="normal" 
+        onChange={handleSearch}
+      />
       <Grid container spacing={3}>
-        {pets.map((pet, index) => (
+        {filteredPets.map((pet, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
             <Card>
               <CardMedia
