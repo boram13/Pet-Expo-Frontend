@@ -10,10 +10,10 @@ import "./index.css";
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#4caf50', 
+      main: '#673ab7', 
     },
     secondary: {
-      main: '#ffeb3b', 
+      main: '#9575cd',
     },
   },
 });

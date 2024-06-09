@@ -11,65 +11,65 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Box from "@mui/material/Box";
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import HomeIcon from '@mui/icons-material/Home';
+import InfoIcon from '@mui/icons-material/Info';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
+import ImageIcon from '@mui/icons-material/Image';
 
 export default function Layout() {
-  const [drawerOpen, setDrawerOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
-
-  const toggleDrawer = () => {
-    setDrawerOpen(!drawerOpen);
-  };
 
   const toggleGallery = () => {
     setGalleryOpen(!galleryOpen);
   };
 
-  const closeDrawer = () => {
-    setDrawerOpen(false);
-  };
-
   return (
-    <div>
-      <AppBar position="static">
+    <Box sx={{ display: 'flex' }}>
+      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
         <Toolbar>
-          <Tooltip title="Menu">
-            <IconButton color="inherit" onClick={toggleDrawer}>
-              <MoreVertIcon />
-            </IconButton>
-          </Tooltip>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, marginLeft: 1 }}>
+          <Typography variant="h6" noWrap sx={{ flexGrow: 1 }}>
             Pet Expo
           </Typography>
+          <Tooltip title="About Us">
+            <IconButton color="inherit" component={Link} to="/about">
+              <InfoIcon />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Contact Us">
+            <IconButton color="inherit" component={Link} to="/contact">
+              <ContactMailIcon />
+            </IconButton>
+          </Tooltip>
         </Toolbar>
       </AppBar>
-      <Container>
-        <Outlet />
-      </Container>
-      <Drawer anchor="left" open={drawerOpen} onClose={closeDrawer}>
-        <Box sx={{ width: 250 }} role="presentation">
+      <Drawer
+        variant="permanent"
+        sx={{
+          width: 250,
+          flexShrink: 0,
+          [`& .MuiDrawer-paper`]: { width: 250, boxSizing: 'border-box' },
+        }}
+      >
+        <Toolbar />
+        <Box sx={{ overflow: 'auto' }}>
           <List>
-            <ListItem button component={Link} to="/" onClick={closeDrawer}>
+            <ListItem button component={Link} to="/">
+              <HomeIcon sx={{ marginRight: 1 }} />
               <ListItemText primary="Home" />
             </ListItem>
-            <ListItem button component={Link} to="/about" onClick={closeDrawer}>
-              <ListItemText primary="About Us" />
-            </ListItem>
-            <ListItem button component={Link} to="/contact" onClick={closeDrawer}>
-              <ListItemText primary="Contact Us" />
-            </ListItem>
             <ListItem button onClick={toggleGallery}>
+              <ImageIcon sx={{ marginRight: 1 }} />
               <ListItemText primary="Gallery" />
             </ListItem>
             {galleryOpen && (
               <>
-                <ListItem button component={Link} to="/gallery/birds" onClick={closeDrawer}>
+                <ListItem button component={Link} to="/gallery/birds">
                   <ListItemText primary="Birds" />
                 </ListItem>
-                <ListItem button component={Link} to="/gallery/cats" onClick={closeDrawer}>
+                <ListItem button component={Link} to="/gallery/cats">
                   <ListItemText primary="Cats" />
                 </ListItem>
-                <ListItem button component={Link} to="/gallery/dogs" onClick={closeDrawer}>
+                <ListItem button component={Link} to="/gallery/dogs">
                   <ListItemText primary="Dogs" />
                 </ListItem>
               </>
@@ -77,6 +77,15 @@ export default function Layout() {
           </List>
         </Box>
       </Drawer>
-    </div>
+      <Box
+        component="main"
+        sx={{ flexGrow: 1, bgcolor: 'background.default', p: 3, marginLeft: '250px' }}
+      >
+        <Toolbar />
+        <Container>
+          <Outlet />
+        </Container>
+      </Box>
+    </Box>
   );
 }
