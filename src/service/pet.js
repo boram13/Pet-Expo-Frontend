@@ -9,8 +9,8 @@ const birds = [
     { _id: 'b6', name: 'Flamingo', photo: 'https://shorturl.at/YH5if', origin: 'Africa' },
     { _id: 'b7', name: 'Seagull', photo: 'https://shorturl.at/VGS54', origin: 'Worldwide' },
     { _id: 'b8', name: 'Hummingbird', photo: 'https://www.birdlife.org/wp-content/uploads/2021/06/Hummingbird-Norbert-Hentges-Unsplash-edited-scaled.jpg', origin: 'Americas' },
-    { _id: 'b9', name: 'Peacock', photo: 'https://t.ly/01rTQ', origin: 'India' },
-    { _id: 'b10', name: 'Pigeon', photo: 'https://t.ly/xA_JV', origin: 'Worldwide' }
+    { _id: 'b9', name: 'Peacock', photo: 'https://rb.gy/9idhap', origin: 'India' },
+    { _id: 'b10', name: 'Pigeon', photo: 'https://shorturl.at/uU2Ge', origin: 'Worldwide' }
   ];
   
   const cats = [
@@ -29,7 +29,7 @@ const birds = [
   const dogs = [
     { _id: 'd1', name: 'Labrador Retriever', photo: 'https://t.ly/SD8xi', origin: 'Canada' },
     { _id: 'd2', name: 'German Shepherd', photo: 'https://t.ly/NcwkA', origin: 'Germany' },
-    { _id: 'd3', name: 'Golden Retriever', photo: 'https://n9.cl/i0kgr', origin: 'Scotland' },
+    { _id: 'd3', name: 'Golden Retriever', photo: 'https://urlis.net/0asih5f5', origin: 'Scotland' },
     { _id: 'd4', name: 'Bulldog', photo: 'https://example.com/bulldog.jpg', origin: 'UK' },
     { _id: 'd5', name: 'Poodle', photo: 'https://example.com/poodle.jpg', origin: 'France' },
     { _id: 'd6', name: 'Beagle', photo: 'https://example.com/beagle.jpg', origin: 'UK' },
