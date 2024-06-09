@@ -15,7 +15,7 @@ const birds = [
   
   const cats = [
     { _id: 'c1', name: 'Persian', photo: 'https://www.vetstreet.com/cats/persian', origin: 'Iran' },
-    { _id: 'c2', name: 'Siamese', photo: 'https://t.ly/LeNT3', origin: 'Thailand' },
+    { _id: 'c2', name: 'Siamese', photo: 'https://www.catster.com/cat-breeds/siamese/', origin: 'Thailand' },
     { _id: 'c3', name: 'Maine Coon', photo: 'https://example.com/mainecoon.jpg', origin: 'USA' },
     { _id: 'c4', name: 'Sphynx', photo: 'https://example.com/sphynx.jpg', origin: 'Canada' },
     { _id: 'c5', name: 'Ragdoll', photo: 'https://example.com/ragdoll.jpg', origin: 'USA' },
@@ -27,7 +27,7 @@ const birds = [
   ];
   
   const dogs = [
-    { _id: 'd1', name: 'Labrador Retriever', photo: 'https://example.com/labrador.jpg', origin: 'Canada' },
+    { _id: 'd1', name: 'Labrador Retriever', photo: 'https://tinyurl.com/2p8m6ezy', origin: 'Canada' },
     { _id: 'd2', name: 'German Shepherd', photo: 'https://example.com/germanshepherd.jpg', origin: 'Germany' },
     { _id: 'd3', name: 'Golden Retriever', photo: 'https://example.com/goldenretriever.jpg', origin: 'Scotland' },
     { _id: 'd4', name: 'Bulldog', photo: 'https://example.com/bulldog.jpg', origin: 'UK' },
