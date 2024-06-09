@@ -14,10 +14,10 @@ const birds = [
   ];
   
   const cats = [
-    { _id: 'c1', name: 'Persian', photo: 'https://www.vetstreet.com/cats/persian', origin: 'Iran' },
-    { _id: 'c2', name: 'Siamese', photo: 'https://www.catster.com/cat-breeds/siamese/', origin: 'Thailand' },
-    { _id: 'c3', name: 'Maine Coon', photo: 'https://example.com/mainecoon.jpg', origin: 'USA' },
-    { _id: 'c4', name: 'Sphynx', photo: 'https://example.com/sphynx.jpg', origin: 'Canada' },
+    { _id: 'c1', name: 'Persian', photo: 'https://shorturl.at/fSD0e', origin: 'Iran' },
+    { _id: 'c2', name: 'Siamese', photo: 'https://t.ly/dZD98', origin: 'Thailand' },
+    { _id: 'c3', name: 'Maine Coon', photo: 'https://t.ly/1LqMc', origin: 'USA' },
+    { _id: 'c4', name: 'Sphynx', photo: 'https://t.ly/cvIOC', origin: 'Canada' },
     { _id: 'c5', name: 'Ragdoll', photo: 'https://example.com/ragdoll.jpg', origin: 'USA' },
     { _id: 'c6', name: 'British Shorthair', photo: 'https://example.com/britishshorthair.jpg', origin: 'UK' },
     { _id: 'c7', name: 'Abyssinian', photo: 'https://example.com/abyssinian.jpg', origin: 'Ethiopia' },
@@ -27,9 +27,9 @@ const birds = [
   ];
   
   const dogs = [
-    { _id: 'd1', name: 'Labrador Retriever', photo: 'https://tinyurl.com/2p8m6ezy', origin: 'Canada' },
-    { _id: 'd2', name: 'German Shepherd', photo: 'https://example.com/germanshepherd.jpg', origin: 'Germany' },
-    { _id: 'd3', name: 'Golden Retriever', photo: 'https://example.com/goldenretriever.jpg', origin: 'Scotland' },
+    { _id: 'd1', name: 'Labrador Retriever', photo: 'https://t.ly/SD8xi', origin: 'Canada' },
+    { _id: 'd2', name: 'German Shepherd', photo: 'https://t.ly/NcwkA', origin: 'Germany' },
+    { _id: 'd3', name: 'Golden Retriever', photo: 'https://n9.cl/i0kgr', origin: 'Scotland' },
     { _id: 'd4', name: 'Bulldog', photo: 'https://example.com/bulldog.jpg', origin: 'UK' },
     { _id: 'd5', name: 'Poodle', photo: 'https://example.com/poodle.jpg', origin: 'France' },
     { _id: 'd6', name: 'Beagle', photo: 'https://example.com/beagle.jpg', origin: 'UK' },
